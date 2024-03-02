@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo - Decoración muebles accesorios y luminarias</title>
+
+    <meta
+      name="description"
+      content="Diseño web listo para tu emprendimiento - alarmas y sistemas de seguridad con formulario de contacto en la portada"
+    />
+    <meta
+      name="keywords"
+      content="paginas web, plantillas, plantillas web, diseño web"
+    />
+    <meta name="author" />
+    <meta name="theme-color" content="" />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="rg/favicon/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="/rg/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/rg/favicon/apple-touch-icon-72x72.png"
+      sizes="72x72"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/rg/favicon/apple-touch-icon-114x114.png"
+      sizes="114x114"
+    />
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="code/css/index.css" />
+    <!--SCRIPT-->
+    <script src="code/js/scrollheader.js"></script>
+    <script src="code/js/monedaSeleccionada.js"></script>
+    <script src="code/js/idiomaSeleccionado.js"></script>
+  </head>
+
+  <body>
+    <div class="search-box" id="search-box">
+      <input
+        type="text"
+        placeholder="Un buscador es imprescindible para tu web"
+      />
+      <span class="close-icon" onclick="toggleBuscar()">X</span>
+    </div>
+    <!-- NAV -->
+    <nav class="envoltura__top--nav">
+      <div class="top__nav--izquierda">
+        <div
+          class="contenedor__nav--moneda"
+          onclick="toggleCurrencyPicker(event)"
+        >
+          <span class="moneda-text">USD</span>
+          <img src="rg/icon/arrowdown.svg" alt="Flecha Abajo Icono" />
+          <!-- selector de moneda -->
+          <div class="selector-moneda" id="selector-moneda">
+            <ul id="monedas">
+              <li data-currency="INR" class="">INR</li>
+              <li data-currency="GBP" class="">GBP</li>
+              <li data-currency="CAD" class="">CAD</li>
+              <li data-currency="USD" class="selected">USD</li>
+              <li data-currency="AUD" class="">AUD</li>
+              <li data-currency="EUR" class="">EUR</li>
+              <li data-currency="JPY" class="">JPY</li>
+            </ul>
+          </div>
+          <!-- Fin del selector de moneda -->
+        </div>
+        <div
+          class="contenedor__nav--idioma"
+          onclick="toggleIdiomaSeleccionado(event)"
+        >
+          <span class="idioma-seleccionada">INGLÉS</span>
+          <img src="rg/icon/arrowdown.svg" alt="Flecha Abajo Icono" />
+          <!-- selector de idioma -->
+          <div class="selector-idioma" id="selector-idioma">
+            <ul id="idiomas">
+              <li data-currency="INR" class="">Alemán</li>
+              <li data-currency="GBP" class="">Francés</li>
+              <li data-currency="CAD" class="">Español</li>
+              <li data-currency="CAD" class="">Inglés</li>
+            </ul>
+          </div>
+          <!-- Fin del selector de idioma -->
+        </div>
+        <div class="box__izquierda">
+          <svg width="20px" height="20px">
+            <use xlink:href="rg/icon/phone.svg#phonesvg"></use>
+          </svg>
+          <p>+51 987654321</p>
+        </div>
+      </div>
+      <div class="top__nav--center">
+        <p>TEXTO PARA DELIVERY</p>
+      </div>
+      <div class="top__nav--der">
+        <a href="#">INICIAR SESIÓN</a>
+        <a href="#">CREAR CUENTA</a>
+        <a href="#">MIS FAVORITOS</a>
+        <img src="rg/icon/user.svg" alt="Icon Usuario" />
+      </div>
+    </nav>
+    <!-- HEADER -->
+
+    <header class="envoltura__header">
+      <div class="contenedor__header--top">
+        <div class="search-container">
+          <img
+            class="icon-lupa"
+            src="rg/icon/search.svg"
+            alt="Lupa"
+            title="Search"
+            onclick="toggleBuscar()"
+          />
+        </div>
+        <img
+          class="icon-hamburguesa"
+          src="rg/icon/hamburguer.svg"
+          alt="Icono"
+        />
+        <div class="header__logo">
+          <img src="rg/logo/logo-text.svg" alt="Logo" />
+        </div>
+        <div class="header__icon--cartera">
+          <img
+            class="icon-lupa--cartera"
+            src="rg/icon/search.svg"
+            alt="Lupa"
+            title="Search"
+            onclick="toggleBuscar()"
+          />
+          <img
+            class="icon-cartera"
+            src="rg/icon/shopping-bag.svg"
+            alt="Cartera"
+            title="Cart"
+          /><span></span>
+        </div>
+      </div>
+      <div class="contenedor__header--bottom">
+        <div>
+          <a class="header-title" href="#">INICIO</a>
+        </div>
+        <div class="header-productos">
+          <a class="header-title" href="#">PRODUCTOS</a>
+          <div class="megamenu">
+            <div class="contenedor-megamenu">
+              <ul class="items-megamenu">
+                <li class="contenedor-categorias">
+                  <a class="categorias-title" href="#">CATEGORÍA UNO</a>
+                  <ul class="items-productos">
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                    <li><a href="#">Producto 4</a></li>
+                    <li><a href="#">Producto 5</a></li>
+                    <li><a href="#">Producto 6</a></li>
+                  </ul>
+                </li>
+                <li class="contenedor-categorias">
+                  <a class="categorias-title" href="#">CATEGORÍA DOS</a>
+                  <ul class="items-productos">
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                    <li><a href="#">Producto 4</a></li>
+                    <li><a href="#">Producto 5</a></li>
+                    <li><a href="#">Producto 6</a></li>
+                  </ul>
+                </li>
+                <li class="contenedor-categorias">
+                  <a class="categorias-title" href="#">CATEGORÍA TRES</a>
+                  <ul class="items-productos">
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                    <li><a href="#">Producto 4</a></li>
+                    <li><a href="#">Producto 5</a></li>
+                    <li><a href="#">Producto 6</a></li>
+                  </ul>
+                </li>
+                <li class="contenedor-categorias">
+                  <a class="categorias-title" href="#">CATEGORÍA CUATRO</a>
+                  <ul class="items-productos">
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                    <li><a href="#">Producto 4</a></li>
+                    <li><a href="#">Producto 5</a></li>
+                    <li><a href="#">Producto 6</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="banner-img">
+              <a href="#">
+                <img src="rg/img/megamenu-bg2.jpg" alt="Banner" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="header-title" href="#">¡OFERTAS!</a>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN PRODUCTOS -->
+    <section class="section__products">
+      <div class="envoltura__section">
+        <a class="contenedor__section--izquierda" href="#">
+          <img
+            class="section__products--imgBanner"
+            src="rg/img/image-banner-home15-1.jpg"
+            alt="Banner Product"
+          />
+          <div class="section__products--text">
+            <h3>200+ NUEVAS NOVEDADES</h3>
+            <div class="section__products--box">
+              <p>Espacio para agregar texto para las novedades</p>
+              <div class="section__products--vermas">
+                <h2>Ver más</h2>
+                <img src="rg/icon/right-arrow.svg" alt="Ver más" />
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="contenedor__section--der">
+          <div class="envoltura__productos">
+            <div class="contenedor__top">
+              <a class="fila__der--top" href="#">
+                <img
+                  class="section__products--imgBanner"
+                  src="rg/img/image-banner-home15-2.jpg"
+                  alt="Banner Product"
+                />
+                <div class="section__products--textTop">
+                  <h3>Nombre del producto</h3>
+                  <div class="section__products--boxDer">
+                    <h2>Ver más</h2>
+                    <img src="rg/icon/right-arrow.svg" alt="Ver más" />
+                  </div>
+                </div>
+              </a>
+              <a class="fila__der--top" href="#">
+                <img
+                  class="section__products--imgBanner"
+                  src="rg/img/image-banner-home15-3.jpg"
+                  alt="Banner Product"
+                />
+                <div class="section__products--textTop">
+                  <h3>Nombre del producto</h3>
+                  <div class="section__products--boxDer">
+                    <h2>Ver más</h2>
+                    <img src="rg/icon/right-arrow.svg" alt="Ver más" />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a class="fila__der--bottom" href="#">
+            <img
+              class="section__products--imgBanner"
+              src="rg/img/image-banner-home15-4.jpg"
+              alt="Banner Product"
+            />
+            <div class="section__products--textAbajo">
+              <h3>Nombre del producto</h3>
+              <div class="section__products--boxDer">
+                <p>50% de descuento</p>
+                <h2>Ver más</h2>
+                <img src="rg/icon/right-arrow.svg" alt="Ver más" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--BANNER IMAGEN -->
+    <section class="envoltura__banner--savebig">
+      <a class="contenedor__banner--img" href="#">
+        <img src="rg/img/image-banner-home15-5.jpg" alt="Banner" />
+      </a>
+    </section>
+    <!--PRODUCTOS DESTACADOS -->
+    <section class="seccion__productosDestacados">
+      <div class="envoltura__productosDesatacados">
+        <div class="contenedor__productos--text">
+          <h2>PRODUCTOS DESTACADOS</h2>
+          <p>
+            Espacio para agregar texto llamativo que atraiga la atención de tus
+            clientes
+          </p>
+        </div>
+        <div class="envoltura__productos--img">
+          <ul class="contenedor__productos--img">
+            <div class="fila__productos">
+              <li class="productos__img producto1">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product1.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto2">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product1-1.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <!-- <span class="viejo-precio">S/ 500.00</span> -->
+                    <span class="precio">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto3">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product3.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto4">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product4.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="fila__productos">
+              <li class="productos__img producto5">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product2-1.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto6">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product5.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto7">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product6.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+              <li class="productos__img producto8">
+                <div class="hover-container">
+                  <img
+                    class="producto-img"
+                    src="rg/productos/home15-product7.jpg"
+                    alt="Imagen del Producto"
+                  />
+                  <div class="hover-content">
+                    <div class="btn-derecha">
+                      <a class="btn" href="#">
+                        <img src="rg/icon/zoom.svg" alt="Icono Zoom" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/heart.svg" alt="Icono Corazon" />
+                      </a>
+                      <a class="btn" href="#">
+                        <img src="rg/icon/compare.svg" alt="Icono Comparar" />
+                      </a>
+                    </div>
+                    <div class="btn-abajo">
+                      <a class="btn btn-wide" href="#"> Añadir al carrito </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="producto__detalles--text">
+                  <div class="nombre-producto">
+                    <a href="#">Nombre del producto</a>
+                  </div>
+                  <div class="producto__precios--variaciones">
+                    <span class="viejo-precio">S/ 500.00</span>
+                    <span class="precio precio__descuento">S/ 400.00</span>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--BANNER CON 2 IMAGENES -->
+    <section class="seccion__banner--final">
+      <div class="contenedor__banner--final">
+        <div class="contenedor__bannerimg">
+          <div class="contenedor__bannerimg--izquierda">
+            <img src="rg/img/home15-lookbook1.jpg" alt="Imagen" />
+          </div>
+          <div class="contenedor__bannerimg--derecha">
+            <img src="rg/img/home15-lookbook2.jpg" alt="Imagen" />
+          </div>
+        </div>
+        <div class="contenedor__bannerText">
+          <p>
+            Your home should be a story of who you are, and be a collection of
+            what you love. A table, a chair, a bowl of fruit and a violin; what
+            else does a man need to be happy?
+          </p>
+          <a>VER CATÁLOGO</a>
+        </div>
+      </div>
+    </section>
+    <!--TIENDA INFORMACION -->
+    <section class="envoltura__tienda--info">
+      <div class="contenedor__tienda--info">
+        <ul>
+          <li class="contenedor__item--info">
+            <div>
+              <img src="rg/icon/truck.svg" alt="Truck" />
+            </div>
+            <div class="contenedor__item--text">
+              <h3>TÍTULO DE ENVIO</h3>
+              <p>Agrega información de interés</p>
+            </div>
+          </li>
+          <li class="contenedor__item--info">
+            <img src="rg/icon/phone2.svg" alt="Teléfono" />
+            <div class="contenedor__item--text">
+              <h3>TÍTULO DE ENVIO</h3>
+              <p>Agrega información de interés</p>
+            </div>
+          </li>
+          <li class="contenedor__item--info">
+            <img src="rg/icon/dollar.svg" alt="Dinero" />
+            <div class="contenedor__item--text">
+              <h3>TÍTULO DE ENVIO</h3>
+              <p>Agrega información de interés</p>
+            </div>
+          </li>
+          <li class="contenedor__item--info">
+            <img src="rg/icon/gift.svg" alt="Gift" />
+            <div class="contenedor__item--text">
+              <h3>TÍTULO DE ENVIO</h3>
+              <p>Agrega información de interés</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--FOOTER -->
+    <footer class="envoltura__footer">
+      <div class="contenedor__footer">
+        <ul class="footer-ul">
+          <li class="footer-li">
+            <div class="footer-li--izquierda">
+              <h3>Categorías</h3>
+              <img
+                src="rg/icon/arrowdown.svg"
+                alt="Flecha Icono"
+                onclick="toggleFlecha(this.parentElement.nextElementSibling)"
+              />
+            </div>
+            <div class="footer__contenedor" id="flecha">
+              <a href="#">Título de categoría</a>
+              <a href="#">Título de categoría</a>
+              <a href="#">Título de categoría</a>
+              <a href="#">Título de categoría</a>
+              <a href="#">Título de categoría</a>
+            </div>
+          </li>
+          <li class="footer-li">
+            <div class="footer-li--izquierda">
+              <h3>Informaciones</h3>
+              <img
+                src="rg/icon/arrowdown.svg"
+                alt="Flecha Icono"
+                onclick="toggleFlecha(this.parentElement.nextElementSibling)"
+              />
+            </div>
+            <div class="footer__contenedor" id="flecha2">
+              <a href="#">Contáctanos</a>
+              <a href="#">Ofertas</a>
+              <a href="#">Políticas de privacidad</a>
+              <a href="#">Términos & condiciones</a>
+              <a href="#">Mi cuenta</a>
+            </div>
+          </li>
+          <li class="footer-li">
+            <div class="footer-li--izquierda">
+              <h3>Servicios al cliente</h3>
+              <img
+                src="rg/icon/arrowdown.svg"
+                alt="Flecha Icono"
+                onclick="toggleFlecha(this.parentElement.nextElementSibling)"
+              />
+            </div>
+            <div class="footer__contenedor" id="flecha3">
+              <a href="#">Solicitar datos personales</a>
+              <a href="#">FAQ's</a>
+              <a href="#">Contáctanos</a>
+              <a href="#">Pedidos y devoluciones</a>
+              <a href="#">Soporte técnico</a>
+            </div>
+          </li>
+          <li class="footer-li">
+            <h3>Contáctanos</h3>
+            <div class="contenedor__footer--contactanos">
+              <div class="footer-contactanos">
+                <img src="rg/icon/gps.svg" alt="Ubicación" />
+                <p>
+                  Nombre de calle o avenida, <br />
+                  Distrito, ciudad y país
+                </p>
+              </div>
+              <div class="footer-contactanos">
+                <img src="rg/icon/phone.svg" alt="Teléfono" />
+                <p>(440) 000 000 0000</p>
+              </div>
+              <div class="footer-contactanos">
+                <img src="rg/icon/mail.svg" alt="Email" />
+                <p>tucorreo@tunegocio.com</p>
+              </div>
+            </div>
+          </li>
+          <form class="footer-li-suscribete">
+            <h3>Para suscribirme</h3>
+            <p>
+              Aunque muy antiguo, pero es importante para invitar a tus
+              prospectos a convertirse en clientes.
+            </p>
+            <div class="contenedor__footer--suscribirme">
+              <input type="text" placeholder="Correo electrónico" required />
+              <span>
+                <button type="submit">SUSCRÍBETE</button>
+              </span>
+            </div>
+          </form>
+        </ul>
+      </div>
+      <hr />
+      <section class="seccion__final">
+        <a href="#">Marketing 70</a>
+        <ul class="tarjetas-icon">
+          <li class="tarjeta-items">
+            <img src="rg/icon/visa.svg" alt="Visa" />
+          </li>
+          <li class="tarjeta-items">
+            <img src="rg/icon/mastercard.svg" alt="Mastercard" />
+          </li>
+          <li class="tarjeta-items">
+            <img src="rg/icon/discover.svg" alt="Discover" />
+          </li>
+          <li class="tarjeta-items">
+            <img src="rg/icon/paypal.svg" alt="Paypal" />
+          </li>
+          <li class="tarjeta-items">
+            <img src="rg/icon/american.svg" alt="American" />
+          </li>
+          <li class="tarjeta-items">
+            <img src="rg/icon/creditcard.svg" alt="CreditCard" />
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+  <script src="code/js/toggleBuscar.js"></script>
+  <script src="code/js/toggleFlecha.js"></script>
+</html>
